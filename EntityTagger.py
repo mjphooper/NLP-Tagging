@@ -319,7 +319,7 @@ class Email():
 # Run on the email set
 #------------------------------------------------------------------------------------------------
 
-#'''
+
 dir = 'Data/Emails/untagged'
 for filename in os.listdir(dir):
     print(dir+"/"+filename)
@@ -331,14 +331,8 @@ for filename in os.listdir(dir):
                 currentEmail.run()
     else:
         continue
-#'''
+
 
 print("All written successfully!")
 
-'''
-with open('Data/Emails/untagged/333.txt','r') as openedEmail:
-    email = openedEmail.read()
 
-    currentEmail = Email(email,tagger)
-    currentEmail.run()
-'''
