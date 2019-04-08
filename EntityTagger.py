@@ -78,7 +78,7 @@ def backoffTagger(train_sents,tagger_classes,backoff=None,cutoff=None):
         backoff = cls(train_sents,backoff=backoff,cutoff=cutoff)
     return backoff
 #tagger = backoffTagger(train_sents,[UnigramTagger,BigramTagger,TrigramTagger],backoff=DefaultTagger('NOUN'),cutoff=1) #Use UBT combination for best results.
-#saveTagger(tagger)
+saveTagger(tagger)
 tagger = loadTagger()
 
 
@@ -133,7 +133,6 @@ class Email():
                 s = s + sArray[i] + " "
         return s
 
-    # header = tagTimes(header), content =...
 
 
 
@@ -334,5 +333,3 @@ for filename in os.listdir(dir):
 
 
 print("All written successfully!")
-
-
