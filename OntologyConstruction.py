@@ -115,16 +115,7 @@ class Email():
 #Run and load the emails!
 #------------------------------------------------------------------------------------------------
 
-'''
-name = "312"
-with open("Data/Emails/untagged/"+name+".txt",'r') as openedEmail:
-    name = "312"
-    email = openedEmail.read()
-tst = Email(name,email)
-tst.run()
-'''
 
-#'''
 print("Processing...")
 dir = 'Data/Emails/untagged'
 depth = 1
